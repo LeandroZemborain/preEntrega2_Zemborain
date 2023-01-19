@@ -47,7 +47,7 @@ function mostrar() {
 
 
 
-////*filtrar autos*////
+////*filtrar*////
 function filtrar() {
     if (autos.length == 0) {
         alert("Lista vacía")
@@ -111,9 +111,9 @@ function agregar() {
         const byPass = autos.map((element) => element.id)
         
         if(byPass.includes(ingreso.id)){
-            alert("Error: Id existente")
+            alert("Error: Id existente.")
         }else if(isNaN(ingreso.id)||isNaN(ingreso.año)){
-            alert("Debe ingresar números en las categorías id y año")
+            alert("Debe ingresar números en las categorías id y año.")
         }else{
             autos.push(ingreso)
             mostrar()
