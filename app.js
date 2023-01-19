@@ -112,7 +112,7 @@ function agregar() {
         
         if(byPass.includes(ingreso.id)){
             alert("Error: Id existente")
-        }if(isNaN(ingreso.id)||isNaN(ingreso.año)){
+        }else if(isNaN(ingreso.id)||isNaN(ingreso.año)){
             alert("Debe ingresar números en las categorías id y año")
         }else{
             autos.push(ingreso)
@@ -152,7 +152,7 @@ function eliminar() {
 
 /*bienvenidos*/
 alert("Bienvenido a: \n\nConsesionaria AUTO YA")
-alert("Presione F12 para abrir consola")
+alert("Presione F12 para abrir consola y refresque (F5)")
 
 /*menu*/
 do {
@@ -182,7 +182,7 @@ do {
             alert("Hasta pronto!")
             break;
         default:
-            alert("\n Debe elegir una opción \n")
+            alert("\n Debe elegir una opción válida. \n")
             break;
     }
 } while (menu != 0)
